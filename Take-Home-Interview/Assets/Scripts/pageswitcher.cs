@@ -8,6 +8,7 @@ public class pageswitcher : MonoBehaviour
 {
     public GameObject page1;
     public GameObject page2;
+    public GameObject page2Text;
     public GameObject page3;
 
     private VisualElement root;
@@ -39,6 +40,7 @@ public class pageswitcher : MonoBehaviour
     {
         page1.SetActive(false);
         page2.SetActive(false);
+        page2Text.SetActive(false);
         page3.SetActive(false);
     }
 
@@ -53,6 +55,7 @@ public class pageswitcher : MonoBehaviour
     {
         setInactive();
         page2.SetActive(true);
+        page2Text.SetActive(true);
         root.Q<Label>("Header").text = ("Page 2");
     }
 
